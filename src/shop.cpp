@@ -34,5 +34,18 @@ void Shop::add(const std::string& article, std::size_t count)
         throw exception_shop("Article " + article + " not found");
     }
 }
-    
+
+std::size_t Shop::count_article(const std::string& article) const
+{
+    auto it_find = _shop.find(article);
+
+    if(it_find != _shop.end())
+    {
+        return it_find->second;
+    }
+    else
+    {
+       throw exception_shop("Article [" + article + "] not faund");
+    }
+}
 
