@@ -20,6 +20,7 @@ public:
 class Shop{
 
     std::map<std::string, std::size_t> _shop;
+    std::size_t _setw = 0;
 
 public:
     Shop() = default;
@@ -41,4 +42,7 @@ public:
 
     //Return size article
     std::size_t count_product() const;
+
+    //Show database
+    void show() const;
 };

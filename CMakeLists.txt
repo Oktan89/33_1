@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 project(Shopping VERSION 0.1.0)
 
 if (CMAKE_COMPILER_IS_GNUCXX)
-message ("Compiler set")
+message ("Compiler set options...")
 	add_compile_options(
         -Werror
         -pedantic-errors
