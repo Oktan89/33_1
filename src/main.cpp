@@ -19,4 +19,5 @@ int main()
     }
 
     std::cout << shop.count_article("test") << std::endl;
+
 }

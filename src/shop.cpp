@@ -16,7 +16,7 @@ void Shop::insert(const std::string& article, std::size_t count)
     {
        _shop.insert(std::make_pair(article, count));
     }
-};
+}
 
 void Shop::add(const std::string& article, std::size_t count)
 {
